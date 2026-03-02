@@ -27,10 +27,82 @@
 
         .box{
             background: rgba(0, 0, 0, 0.75);
-            border: 1px solid rgb(251, 255, 0);
+            border: 1px solid #fbff008e;
             border-radius: 12px;
             padding: 14px;
             margin-bottom: 8px;
+        }
+        h1, h2{
+            text-transform: uppercase;
+            color: #fbff00;
+            margin: 0 0 8px;
+        }
+        .subtitulo{
+            margin: 0;
+            color: #d1d5dd;
+        }
+        p{
+            color: #d1d5dd;
+        }
+        #apresentacao{
+            border-left: 8px solid #fbff00;
+        }
+        strong{
+            text-transform: uppercase;
+            color: #fbff00;
+        }
+        .nav{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+            flex-wrap:nowrap;
+        }
+        .nav-link{
+            text-transform: uppercase;
+            display: inline-block;
+            text-decoration: none;
+            color: black;
+            background: #fbff00;
+            padding: 8px 10px;
+            border-radius: 10px;
+            font-weight: 700;
+        }
+        .nav-link:hover{
+            background-color: #fbff008e;
+        }
+        .gallery{
+            width: 500px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: nowrap;
+        }
+        .bat-img{
+            width: 220px;
+            height: 120px;
+            border: 1px solid #fbff00;
+            border-radius: 10px;
+        }
+        .bat-img:hover{
+            border: 1px solid #fbff008e;
+        }
+
+        footer p{
+            color: #fbff00;
+            margin: 0 12px 0 12px;
+        }
+
+        .link {
+            display: flex;
+            justify-content: center;
+            color: rgb(251, 255, 0);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -54,7 +126,7 @@
         </nav>
 
         <main id="conteudo">
-            <section class="box" id="aprentacao">
+            <section class="box" id="apresentacao">
                 <h2>Quem é o Batman?</h2>
                 <p>
                     Batman (Bruce Wayne) é um personagem da DC comics e atua como justiceiro (sem ninguém ter pedido isso a ele) de Gothan. Ele não tem superpoderes: sua força está em <strong>treinamento</strong>, <em>tecnologia</em> e riqueza (muita riqueza).
@@ -67,9 +139,9 @@
             <section class="box" id="galeria">
                 <h2>Galeria</h2>
                 <div class="gallery" id="galeria-imagens">
-                    <img class="bat-img" src="batman-bruce.webp" alt="Bruce wayne" width="220" height="120">
-                    <img class="bat-img" src="batman-lego.png" alt="Batman do Lego" width="220" height="120">
-                    <img class="bat-img" src="batman-sombrio.jpg" alt="Batman sombbrio" width="220" height="120">
+                    <img class="bat-img" src="batman-bruce.webp" alt="Bruce wayne">
+                    <img class="bat-img" src="batman-lego.png" alt="Batman do Lego">
+                    <img class="bat-img" src="batman-sombrio.jpg" alt="Batman sombbrio">
                 </div>
             </section>
         </main>
